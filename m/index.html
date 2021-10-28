@@ -1,0 +1,368 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<head>
+		<!-- Global site tag (gtag.js) - Google Ads: 590224479 -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=AW-590224479"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+		gtag('config', 'AW-590224479');
+	</script>
+	<!-- Global site tag END -->
+		<title>Personality test</title>
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+		<meta name="viewport" content="width=360">
+		<link type="text/css" rel="stylesheet" href="css/styles.css">
+		<link type="text/css" rel="stylesheet" href="css/animations.css">
+		<script src="../js/detectBrowserD.js"></script>
+		<script>
+			function setInputEnd(id) {
+				var el = document.getElementById(id);
+				el.selectionStart = el.selectionEnd = el.value.length;
+				el.focus();
+			}
+		</script>
+	</head>
+	<body>
+		<div class="container">
+			
+			<div class="form">
+				<div img class="img img_1">
+					<div class="icon logo"></div>
+					<div class="title">
+						<div class="a">
+							<span lng="en">What is your<br>personality?</span>
+							<span lng="ar">&nbsp;</span>
+						</div>
+						<div class="b fz-1 fw-n">
+							<i class="icon icon_arrow"></i>
+							<span lng="en">Find out how others see you</span>
+							<span lng="ar">&nbsp;</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="box">
+					<div class="header">
+						<div lng="en">Personality test</div>
+						<div lng="ar">&nbsp;</div>
+					</div>
+					<!--Idioma inicio-->
+					<a href="javascript:void(0);" id="lng_select" class="lng_sel" onclick="btn_lng();">
+						<i class="icon icon_lng"></i>
+						<span lng="en"><span class="lng_ar">العربية</span></span>
+						<span lng="ar"><span class="ltr">English</span></span>
+					</a>
+					<!--Idioma fin-->
+					
+					<div class="box-a">
+						
+						<div class="bottom">
+							<div class="bar_container">
+								<div class="progress_bar">
+									<div class="bar" bar></div>
+								</div>
+							</div>
+						</div>
+
+						<!--Paso inicio-->
+						<div id="step_1" class="step visible">
+							<div class="top fz-1">
+								
+								<span lng="en">Question 1</span>
+								<span lng="ar">السؤال رقم 1</span>
+							</div>
+							<div class="label">
+								<div class="a">
+									<span lng="en">When you enter a party or social gathering, you tend to:</span>
+									<span lng="ar">&nbsp;</span>
+								</div>
+							</div>
+							<div class="options">
+								<a href="javascript:void(0);" class="option" onclick="btn_next('step_2');add_score(2);">
+									<span lng="en">Make a loud entrance, so that everyone notices you</span>
+									<span lng="ar">&nbsp;</span>
+								</a>
+								<a href="javascript:void(0);" class="option" onclick="btn_next('step_2');add_score(1);">
+									<span lng="en">Make a quiet entrance, looking around for someone you know</span>
+									<span lng="ar">&nbsp;</span>
+								</a>
+								<a href="javascript:void(0);" class="option" onclick="btn_next('step_2');add_score(0);">
+									<span lng="en">Make the quietest entrance, trying to stay unnoticed</span>
+									<span lng="ar">&nbsp;</span>
+								</a>
+							</div>
+							<!-- -->
+						</div>
+						<!--Paso fin-->
+
+						<!--Paso inicio-->
+						<div id="step_2" class="step">
+							<div class="top fz-1">
+								
+								<span lng="en" top_en>Question 2</span>
+								<span lng="ar">السؤال رقم 2</span>
+							</div>
+							<div class="label">
+								<div class="a">
+									<span lng="en">If you’re focused on a task and you’re interrupted, you’re likely to:</span>
+									<span lng="ar">&nbsp;</span>
+								</div>
+							</div>
+							<div class="options">
+								<a href="javascript:void(0);" class="option" onclick="btn_next('step_3');add_score(1);">
+									<span lng="en">Welcome the break</span>
+									<span lng="ar">&nbsp;</span>
+								</a>
+								<a href="javascript:void(0);" class="option" onclick="btn_next('step_3');add_score(2);">
+									<span lng="en">Feel extremely irritated</span>
+									<span lng="ar">&nbsp;</span>
+								</a>
+								<a href="javascript:void(0);" class="option" onclick="btn_next('step_3');add_score(0);">
+									<span lng="en">Vary between these two extremes</span>
+									<span lng="ar">&nbsp;</span>
+								</a>
+							</div>
+						</div>
+						<!--Paso fin-->
+
+						<!--Paso inicio-->
+						<div id="step_3" class="step">
+							<div class="top fz-1">
+								
+								<span lng="en" top_en>Question 3</span>
+								<span lng="ar">السؤال رقم 3</span>
+							</div>
+							<div class="label">
+								<div class="a">
+									<span lng="en">Your favorite color is:</span>
+									<span lng="ar">&nbsp;</span>
+								</div>
+							</div>
+							<div class="options">
+								<a href="javascript:void(0);" class="option" onclick="btn_next('step_4');add_score(2);">
+									<span lng="en">Red / orange</span>
+									<span lng="ar">&nbsp;</span>
+								</a>
+								<a href="javascript:void(0);" class="option" onclick="btn_next('step_4');add_score(1);">
+									<span lng="en">Yellow / light blue</span>
+									<span lng="ar">&nbsp;</span>
+								</a>
+								<a href="javascript:void(0);" class="option" onclick="btn_next('step_4');add_score(1);">
+									<span lng="en">Green</span>
+									<span lng="ar">&nbsp;</span>
+								</a>
+								<a href="javascript:void(0);" class="option" onclick="btn_next('step_4');add_score(0);">
+									<span lng="en">Dark blue/purple</span>
+									<span lng="ar">&nbsp;</span>
+								</a>
+							</div>
+						</div>
+						<!--Paso fin-->
+
+						<!--Paso inicio-->
+						<div id="step_4" class="step">
+							<div class="top fz-1">
+								
+								<span lng="en" top_en>Question 4</span>
+								<span lng="ar">السؤال رقم 4</span>
+							</div>
+							<div class="label">
+								<div class="a">
+									<span lng="en">When you speak to people, you tend to:</span>
+									<span lng="ar">&nbsp;</span>
+								</div>
+							</div>
+							<div class="options">
+								<a href="javascript:void(0);" class="option" onclick="btn_next('step_5');add_score(0);">
+									<span lng="en">Stand with your arms folded</span>
+									<span lng="ar">&nbsp;</span>
+								</a>
+								<a href="javascript:void(0);" class="option" onclick="btn_next('step_5');add_score(1);">
+									<span lng="en">Have one or both of your hands on your hips</span>
+									<span lng="ar">&nbsp;</span>
+								</a>
+								<a href="javascript:void(0);" class="option" onclick="btn_next('step_5');add_score(2);">
+									<span lng="en">Touch or push the person to whom you are talking</span>
+									<span lng="ar">&nbsp;</span>
+								</a>
+								<a href="javascript:void(0);" class="option" onclick="btn_next('step_5');add_score(0);">
+									<span lng="en">Play with your ear or hair, touch your chin, or smooth your hair</span>
+									<span lng="ar">&nbsp;</span>
+								</a>
+							</div>
+						</div>
+						<!--Paso fin-->
+
+						<!--Paso inicio-->
+						<div id="step_5" class="step">
+							<div class="top fz-1">
+								
+								<span lng="en" top_en>Question 5</span>
+								<span lng="ar">السؤال رقم 5</span>
+							</div>
+							<div class="label">
+								<div class="a">
+									<span lng="en">When you find something really funny, you usually give:</span>
+									<span lng="ar">&nbsp;</span>
+								</div>
+							</div>
+							<div class="options">
+								<a href="javascript:void(0);" class="option" onclick="btn_next('mobile_box');add_score(2);">
+									<span lng="en">A big, appreciative laugh</span>
+									<span lng="ar"></span>
+								</a>
+								<a href="javascript:void(0);" class="option" onclick="btn_next('mobile_box');add_score(1);">
+									<span lng="en">A laugh, but not a loud one</span>
+									<span lng="ar"></span>
+								</a>
+								<a href="javascript:void(0);" class="option" onclick="btn_next('mobile_box');add_score(1);">
+									<span lng="en">A quiet chuckle</span>
+									<span lng="ar"></span>
+								</a>
+								<a href="javascript:void(0);" class="option" onclick="btn_next('mobile_box');add_score(0);">
+									<span lng="en">A sheepish smile</span>
+									<span lng="ar"></span>
+								</a>
+							</div>
+							<!-- -->
+						</div>
+						<!--Paso fin-->
+
+						<!--Paso inicio-->
+						<div id="mobile_box" class="step">
+							<div class="top fz-1">
+								
+								<span lng="en" top_en>Completed!</span>
+								<span lng="ar" top_ar>&nbsp;</span>
+							</div>
+							<div class="label">
+								<div class="a">
+									<i class="icon icon_phone"></i><br>
+									<span lng="en" id="text_mobile">Enter your mobile number</span>
+									<span lng="ar">أدخل رقم هاتفك للتنزيل</span>
+								</div>
+							</div>
+							<div class="input_container">
+								<input placeholder="Mobile" autocomplete="off" maxlength="11" id="mobile" type="tel"
+							autofocus="autofocus" onKeyPress="return validar(event)" onfocus="setInputEnd('mobile')">
+							</div>
+							<div class="btn_container">
+								<a href="javascript:void(0);" class="btn" onclick="btnNext1();">
+									<i class="icon icon_arrow_right a"></i>
+									<i class="icon icon_arrow_right b"></i>
+									<span lng-a class="text-btn11" style="padding: 0 10px;">Subscribe</span>
+									<!-- <span lng-b class="text-btn11">اشترك</span> -->
+									<span id="textloading" class="text-loading">Loading</span>
+									<i class="icon icon_arrow_left b"></i>
+									<i class="icon icon_arrow_left a"></i>
+									<span class="shine"></span>
+								</a>
+							</div>
+							<!-- -->
+						</div>
+						<!--Paso fin-->
+
+						<!--Paso inicio-->
+						<div id="pin_box" class="step">
+							<div class="top fz-1">
+								
+								<span lng="en" top_en>Completed!</span>
+								<span lng="ar" top_ar>&nbsp;</span>
+							</div>
+							<div class="label">
+								<div class="a">
+									<i class="icon icon_pin"></i><br>
+									<span lng="en">Enter the PIN received on your mobile</span>
+									<span lng="ar">دخل الرمز الشخصي الذي تلقيته على جوالك</span>
+								</div>
+							</div>
+							<div class="input_container">
+								<input autocomplete="off" maxlength="4" class="textfield" id="pin" type="tel" placeholder="PIN"
+							onKeyPress="return validar(event)">
+							</div>
+							<div class="btn_container">
+								<a href="javascript:void(0);" class="btn" onclick="btnNext2();">
+									<i class="icon icon_arrow_right a"></i>
+									<i class="icon icon_arrow_right b"></i>
+									<span lng="en" class="text text-btn12" style="padding: 0 10px;">Continue</span>
+									<!-- <span lng="ar" class="text text-btn12">إستمر</span> -->
+									<span id="text-loading-pin" class="text-loading-pin">Loading</span>
+									<i class="icon icon_arrow_left b"></i>
+									<i class="icon icon_arrow_left a"></i>
+									<span class="shine"></span>
+								</a>
+							</div>
+						</div>
+						<!--Paso fin-->
+
+						<!--Paso inicio-->
+						<div id="resultado" class="step">
+							<div class="top fz-1">
+								<span lng="en" top_en>Completed!</span>
+								<span lng="ar" top_ar>&nbsp;</span>
+							</div>
+							<div class="result_container">
+								<div class="fz-1 c-gray">
+									<span lng="en">Your result:</span>
+									<span lng="ar">&nbsp;</span>
+								</div>
+								<div class="fz-5 fw-b mt-1 mb-1 lh-1">
+									<span lng="en" result_1_en></span>
+									<span lng="ar" result_1_ar></span>
+								</div>
+								<div class="fz-2 mb-1">
+									<span lng="en" result_2_en></span>
+									<span lng="ar" result_2_ar></span>
+								</div>
+							</div>
+						</div>
+						<!--Paso fin-->
+						
+					
+					</div>
+				</div>
+			</div>
+			<!--Footer inicio-->
+		<div class="footer">
+			<div lng="en">
+				Omantel: OMR 0.21 daily (Subject to 5% Value Added Tax)
+				Ooredoo: OMR 1.313 weekly (Price includes 5% VAT)
+				Autorenewal service.
+				<br>
+				Welcome to the Combo subscription service. You will subscribe to the mobile content service. As a mobile
+				subscriber you will receive 1 message per week costing 0.21 OMR (for Omantel customers) (Subject to 5%
+				Value Added Tax) or 1.313 OMR per week (For Ooredoo customers, and the deduction can be a lower amount,
+				depending on the available balance) (Price includes 5% VAT) . This message contains a link to your
+				personal mobile from where you can get the best games. This subscription will be auto renewed. This is a
+				subscription service active until you send Unsub C to 91402 on Omantel or Unsub Combo to 92076 on
+				Ooredoo. To make use of this service, one must be more than 18 years old or have received permission
+				from your parents or person who is authorized to pay your bill. TIMWE works in accordance with the
+				international code of conduct for SMS service.
+			</div>
+			<div lng="ar">
+				التكلفة لعملاء الإتصالات السعودية <span class="ltr">5</span> ر.س/الاسبوع. للالغاء في اي وقت يرجى ارسال
+				<span class="ltr">U 2</span> الى <span class="ltr">801761</span>. التكلفة لعملاء زين <span
+					class="ltr">5</span> ر.س/الاسبوع. للالغاء في اي وقت يرجى ارسال <span class="ltr">U 2</span> الى
+				<span class="ltr">704441</span>. موبايلي <span class="ltr">0.66</span> ر.س/لليوم ويتجدد يوميا لالغاء
+				الاشتراك ارسل <span class="ltr">U1</span> الى <span class="ltr">606062</span>. ير شاملة ضريبة القيمة
+				المضافة <span class="ltr">(15%)</span>. عند اشتراكك بهذه الخدمة تكون قد وافقت على جميع الشروط والاحكام
+				التابعة للخدمة
+			</div>
+		</div>
+		<!--Footer fin-->
+		</div>
+		<script type="text/javascript">
+			(function () {
+				e = document.querySelectorAll('[lng="en"]');
+				for (var i = 0; i < this.e.length; i++) {
+					this.e[i].classList.toggle('visible');
+				}
+			})();
+		</script>
+		<script src="../js/he_reader.js"></script>
+		<script src="../js/main.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	</body>
+</html>
