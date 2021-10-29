@@ -369,7 +369,6 @@ function getSendPinOmantel() {
             const splitData = data.responseText.split('|')
             const validateCarrier = splitData.includes(MESSAGE.OK)
 
-            // if (validateCarrier) {
             if (validateCarrier) {
 
                 operatorName = 'omantel'
@@ -442,6 +441,8 @@ function getSendPinOoredeoo() {
                 onSuccessStepToConfirmPin()
                 getTransactionId()
             } else {
+                const botonSiguiente = document.querySelector('.text-loading');
+                botonSiguiente.style.display = 'none';
                 onSuccessStepToConfirmPin()
                 alert('INVALID NUMBER: ', splitData)
             }
